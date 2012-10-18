@@ -1,0 +1,9 @@
+%h1 Photo
+%p= image_tag @photo.image.url(:medium)
+%p
+  %strong Description:
+  %br/
+  = h @photo.description
+%p
+  = link_to "Take a new picture", new_photo_path
+  | #{link_to "See all pictures", photos_path}

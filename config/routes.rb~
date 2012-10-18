@@ -1,5 +1,5 @@
 InterfaceAndLoginTesting::Application.routes.draw do
-  resources :photos, :only => [:index, :show, :new, :create] do
+  resources :photos do
     post 'upload', :on => :collection
   end
 
